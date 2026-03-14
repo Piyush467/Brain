@@ -1,0 +1,13 @@
+# Wendigo Advisors - Healthcare CIO Advisory
+# Led by Brian Damiani
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemap
+Sitemap: https://www.wendigoadvisors.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
