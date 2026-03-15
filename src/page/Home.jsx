@@ -13,6 +13,7 @@ import CEOPerspective from "../components/CEOPerspective";
 import ExposureCTA from "../components/ExposureCTA";
 import Footer from "../components/Footer";
 import EntityRegistry from '../components/EntityRegistry';
+import AdvisoryPackages from "../components/AdvisoryPackages";
 
 const Home = () => {
   const location = useLocation();
@@ -126,7 +127,8 @@ const Home = () => {
       <EntityRegistry type="organization" />
       <Problems />
       <Services />
-      <Pricing />
+      {/* <Pricing /> */}
+      <AdvisoryPackages/>
       <Why />
       <AboutWendigo />
 

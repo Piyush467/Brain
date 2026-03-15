@@ -9,6 +9,7 @@ import Pricing4 from '../components/pricing4'
 import Pricing5 from '../components/pricing5'
 import Pricing from "../components/Pricing";
 // import Pricing6 from '../components/pricing6'
+ import AdvisoryPackages from "../components/AdvisoryPackages";
 
 
 const About = () => {
@@ -77,7 +78,9 @@ const About = () => {
           `}
         </script>
       </Helmet>
-      <Pricing/>
+     
+      <AdvisoryPackages/>
+      {/* <Pricing/> */}
       <Pricing2 />
       <Pricing3 />
       <Pricing4 />
