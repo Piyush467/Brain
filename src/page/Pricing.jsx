@@ -2,11 +2,12 @@ import React from 'react'
 import { Helmet } from 'react-helmet-async'
 
 import Footer from '../components/Footer'
-import Pricing1 from '../components/pricing1'
+// import Pricing1 from '../components/pricing1'
 import Pricing2 from '../components/pricing2'
 import Pricing3 from '../components/pricing3'
 import Pricing4 from '../components/pricing4'
 import Pricing5 from '../components/pricing5'
+import Pricing from "../components/Pricing";
 // import Pricing6 from '../components/pricing6'
 
 
@@ -76,7 +77,7 @@ const About = () => {
           `}
         </script>
       </Helmet>
-      <Pricing1 />
+      <Pricing/>
       <Pricing2 />
       <Pricing3 />
       <Pricing4 />

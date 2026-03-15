@@ -7,7 +7,6 @@ import HomeContent from "../components/HomeContent";
 import Problems from "../components/Problems";
 import Services from "../components/Services";
 import Pricing from "../components/Pricing";
-import Process from "../components/Process";
 import Why from "../components/Why";
 import AboutWendigo from "../components/AboutWendigo";
 import CEOPerspective from "../components/CEOPerspective";
@@ -128,7 +127,6 @@ const Home = () => {
       <Problems />
       <Services />
       <Pricing />
-      <Process />
       <Why />
       <AboutWendigo />
 

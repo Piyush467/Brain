@@ -61,35 +61,28 @@ const Services = () => {
     const [activeId, setActiveId] = useState(1);
 
     const services = [
-        {
-            id: 1,
-            title: "Free Working Session",
-            description:
-                "A 30-minute working session focused on a real technology or operational problem you’re facing—no sales pitch, just practical guidance and clarity.",
-            icon: <Coffee className="w-6 h-6" /> // or any icon you prefer
-        },
-        {
-            id: 2,
-            title: "IT Health Check",
-            description:
-                "A focused assessment of your current IT environment to identify risks, gaps, and opportunities with clear, prioritized recommendations.",
-            icon: <HeartPulse className="w-6 h-6" />
-        },
-        {
-            id: 3,
-            title: "CIO Operating System",
-            description:
-                "A structured 3–4 month assessment that brings clarity, control, and accountability to how technology supports the business.",
-            icon: <LayoutGrid className="w-6 h-6" />
-        },
-        {
-            id: 4,
-            title: "CIO as a Service",
-            description:
-                "Ongoing fractional CIO leadership providing strategic, operational, and executive-level technology support without a full-time hire.",
-            icon: <UserCircle className="w-6 h-6" />
-        }
-    ];
+  {
+    id: 1,
+    title: "Stabilize",
+    description:
+      "Establish visibility into technology risks, vendors, and ongoing initiatives. Immediate leadership helps restore operational stability and executive confidence.",
+    icon: <Waypoints className="w-6 h-6" />
+  },
+  {
+    id: 2,
+    title: "Strengthen",
+    description:
+      "Align technology strategy with business priorities while improving governance, accountability, and leadership across the IT organization.",
+    icon: <Crown className="w-6 h-6" />
+  },
+  {
+    id: 3,
+    title: "Scale",
+    description:
+      "Position the organization for long-term growth through stronger leadership structures, modern platforms, and sustainable technology strategy.",
+    icon: <LayoutGrid className="w-6 h-6" />
+  }
+];
 
 
     return (
@@ -106,45 +99,25 @@ const Services = () => {
                         </span>
 
                         <h2 className="max-w-5xl mx-auto mb-10 text-4xl font-bold leading-[1.2] md:text-5xl text-black">
-                            <span className="inline-block relative pb-2 mr-2 md:mr-4 group">
 
-                                <span className="relative z-10 font-[Inter]">What changes</span>
-                                <MarkerUnderline />
-                            </span>
+  <span className="inline-block relative pb-2 mr-2 group">
+    <span className="relative z-10 font-[Inter]">
+      Stronger technology
+    </span>
+    <MarkerUnderline />
+  </span>
 
-                            <span className="text-gray-400 font-semibold font-[Inter]">
-                                when
-                            </span>{" "}
+  <span className="text-gray-600 font-semibold font-[Inter]">
+    leadership
+  </span>
 
-                            <span className="inline-block relative pb-2 group">
-                                <span className="relative z-10 font-[Inter]">
-                                    someone
-                                </span>
-                                <MarkerUnderline />
-                            </span>
+</h2>
 
-                            <br className="hidden md:block" />
-
-                            {/* Underlined Text with Hover Effect (3) */}
-                            <span className="text-gray-400 font-semibold mx-2 font-[Inter]">finally</span>
-                            <span className="relative whitespace-nowrap inline-block mr-2 md:mr-4 ml-0 md:ml-2 group">
-                                <span className="relative z-10 font-[Inter]">tells</span>
-                                <MarkerUnderline />
-                            </span>
-
-                            <span className="text-gray-400 font-semibold mx-2 font-[Inter]">you</span>
-
-                            {/* Underlined Text with Hover Effect (4) */}
-                            <span className="relative whitespace-nowrap inline-block group">
-                                <span className="relative z-10 font-[Inter]">the truth.</span>
-                                <MarkerUnderline />
-                            </span>
-                        </h2>
 
                         <p
                             className="font-tt-hoves font-medium text-[20px] leading-[100%] tracking-[0px] text-[#00000080]"
                         >
-                            Healthcare CEOs bring Wendigo in because they need clarity and control fast.
+                            Every engagement follows a structured leadership approach designed to quickly restore clarity, strengthen governance, and position organizations for long-term success.
                         </p>
 
                     </div>

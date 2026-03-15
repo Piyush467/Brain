@@ -97,30 +97,36 @@ const AboutWendigo = () => {
 
           {/* Headline */}
           <h2 className="max-w-5xl mx-auto mb-10 text-4xl font-bold leading-[1.2] md:text-5xl text-black">
-            <span className="text-gray-400 font-semibold mx-2 font-[Inter]">Who</span>
-            <span className="inline-block relative pb-2 mr-2 md:mr-4 group">
+  
+  {/* First line — grey intro */}
+  <span className="text-gray-400 font-semibold mx-2 font-[Inter]">
+    Trusted CIO
+  </span>
 
-              <span className="relative z-10 font-[Inter]">you</span>
-              <MarkerUnderline />
-            </span>
+  {/* Underlined word */}
+  <span className="inline-block relative pb-2 mr-2 md:mr-4 group">
+    <span className="relative z-10 font-[Inter]">
+      leadership
+    </span>
+    <MarkerUnderline />
+  </span>
 
-            <span className="text-gray-600 font-semibold font-[Inter]">
-              trust with
-            </span>{" "}
+  {/* Second line text */}
+  <span className="text-gray-600 font-semibold font-[Inter]">
+    for complex healthcare
+  </span>{" "}
 
+  <br className="hidden md:block" />
 
+  {/* Underlined ending */}
+  <span className="relative whitespace-nowrap inline-block mr-2 md:mr-4 ml-0 md:ml-2 group">
+    <span className="relative z-10 font-[Inter]">
+      environments.
+    </span>
+    <MarkerUnderline className="group-hover:scale-x-[1.05] group-hover:translate-y-0.5 transition-transform duration-300" />
+  </span>
 
-            <br className="hidden md:block" />
-
-            {/* Underlined Text with Hover Effect (3) */}
-
-            <span className="relative whitespace-nowrap inline-block mr-2 md:mr-4 ml-0 md:ml-2 group">
-              <span className="relative z-10 font-[Inter]">IT matters.</span>
-              <MarkerUnderline className="group-hover:scale-x-[1.05] group-hover:translate-y-0.5 transition-transform duration-300" />
-            </span>
-
-
-          </h2>
+</h2>
 
           {/* Sub-headline */}
           <p className="text-[20px] leading-none font-normal text-[#00000080] mb-6 font-tt">
@@ -153,23 +159,24 @@ const AboutWendigo = () => {
 
           {/* Description Paragraph */}
           <p className="text-[16px] leading-none font-medium text-[#000000BF] mb-8 max-w-lg font-tt">
-            You need a leader who can read your environment quickly, understand the pressures you face, and uncover the problems no one is telling you about. Brian has spent more than 25 years inside healthcare IT, stabilizing teams, reducing risk, and giving CEOs the visibility they need to lead with confidence.
+            Healthcare organizations need experienced leadership when technology risk, vendor complexity, and strategic decisions begin affecting the business.
+Brian Damiani has spent more than 25 years leading healthcare IT organizations, stabilizing teams, reducing risk, and helping executive leaders gain the visibility needed to make confident technology decisions.
           </p>
 
           {/* GEO: Fast Facts for AI Context */}
           <ul className="mb-8 space-y-2 text-sm text-slate-600">
             <li className="flex items-center gap-2"><strong className="text-slate-900">Core Expertise:</strong> Healthcare CIO Advisory</li>
-            <li className="flex items-center gap-2"><strong className="text-slate-900">Experience:</strong> 25+ Years (Payer & Provider)</li>
-            <li className="flex items-center gap-2"><strong className="text-slate-900">Methodology:</strong> The CIO Operating System™</li>
+            <li className="flex items-center gap-2"><strong className="text-slate-900">Experience:</strong> 25+ years in healthcare organizations</li>
+            <li className="flex items-center gap-2"><strong className="text-slate-900">Methodology:</strong> The CIO Operating System – Stabilize, Strengthen, Scale</li>
           </ul>
 
           {/* Button */}
           {/* Button */}
           <a
-            href="/about"
+            href="http://yourhealthcarecio.com/"
             className="group inline-flex items-center gap-2 bg-[#348DF0] hover:bg-blue-600 text-white px-8 py-3.5 rounded-full font-medium transition-all shadow-lg shadow-blue-500/30"
           >
-            Read Brian's Bio
+            Learn more about Brian
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

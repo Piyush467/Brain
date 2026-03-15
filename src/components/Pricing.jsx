@@ -48,58 +48,67 @@ const MarkerUnderline = ({ className = "" }) => {
 
 const Pricing = () => {
     const plans = [
-        {
-            title: "CIO as a Service",
-            price: "$7,000",
-            frequency: "Starting / Month",
-            description: "Get C-level IT leadership without hiring full-time. Strategy, culture, systems, cybersecurity — all led with hands-on involvement and clear communication.",
-            features: [
-                "Advisory & decision support",
-                "Team leadership & coaching",
-                "System reviews & recommendations",
-                "Ongoing strategic roadmap execution",
-                "Direct collaboration with the executive team"
-            ],
-            buttonText: "Get Started Now",
-            isPopular: false, // Keeps card background white
-            showBadge: true,  // Displays the badge
-        },
-        {
-            title: "CIO Operating System Assessment",
-            price: "$25,000",
-            frequency: "Starting",
-            description: "A structured 3–4 month engagement designed to stabilize, strengthen, and scale your IT organization.\nClear findings. No jargon. Actionable next steps.",
-            features: [
-                "Risk & Performance Scorecard",
-                "Executive IT Summary",
-                "Prioritized Issues List",
-                "Updated IT & Security Policies",
-                "IT Compliance Dashboard",
-                "90-Day Action Plan",
-                "Capability Gap Assessment",
-                "1-Year IT Roadmap"
-            ],
-            buttonText: "Get Started Now",
-            isPopular: true, // Card is blue
-            showBadge: true,
-        },
-        {
-            title: "IT Health Check",
-            price: "$5,000",
-            frequency: "Starting",
-            description: "A fast 2–3 week diagnostic that reveals the health of your IT environment. See what's working, what's failing, and where your highest-risk blind spots are.",
-            features: [
-                "Rapid IT environment review",
-                "Security & compliance risk scan",
-                "Technology & process gap identification",
-                "Prioritized recommendations",
-                "Executive-ready summary findings"
-            ],
-            buttonText: "Get Started Now",
-            isPopular: false,
-            showBadge: false,
-        },
-    ];
+  {
+    title: "Strategic CIO Advisor",
+    description:
+      "Executive guidance for critical technology decisions\n\nBest for organizations that need experienced CIO perspective to guide strategy, investments, and leadership discussions.",
+    features: [
+      "Typical engagement",
+      "Monthly or periodic advisory support",
+      "Participation in executive leadership discussions",
+      "Strategic guidance on technology initiatives",
+      "Independent perspective on vendors and investments",
+      "Outcomes",
+      "Clear technology strategy and priorities",
+      "Stronger business–IT alignment",
+      "More confident executive decision-making",
+      "Independent guidance on major technology investments"
+    ],
+    buttonText: "Get Started Now",
+    isPopular: false,
+    showBadge: false
+  },
+  {
+    title: "Fractional CIO Leadership",
+    description:
+      "Ongoing CIO leadership without hiring a full-time executive\n\nBest for organizations that need consistent CIO-level leadership but do not require a full-time role.",
+    features: [
+      "Typical engagement",
+      "One or more days per week of CIO leadership",
+      "Oversight of IT leadership and major initiatives",
+      "Technology roadmap development and execution",
+      "Vendor and partner strategy",
+      "Outcomes",
+      "Consistent executive technology leadership",
+      "Stronger IT governance and accountability",
+      "Technology initiatives moving forward with clear oversight",
+      "IT strategy translated into operational execution"
+    ],
+    buttonText: "Get Started Now",
+    isPopular: true,   // KEEP emphasis on middle card
+    showBadge: false   // REMOVE “Most Popular”
+  },
+  {
+    title: "Interim CIO Leadership",
+    description:
+      "Full-time CIO leadership during executive transitions\n\nBest for organizations navigating a sudden CIO departure or major leadership transition.",
+    features: [
+      "Typical engagement",
+      "Immediate executive leadership for the IT organization",
+      "Stabilization of operations and key initiatives",
+      "Leadership of the CIO search or transition process",
+      "Strategic and operational oversight during the transition period",
+      "Outcomes",
+      "Stable IT leadership during a critical transition",
+      "Reduced operational and technology risk",
+      "Continuity across projects, vendors, and teams",
+      "A stronger foundation for the incoming CIO"
+    ],
+    buttonText: "Get Started Now",
+    isPopular: false,
+    showBadge: false
+  }
+];
 
     return (
         <section className="relative py-10 px-4 sm:px-6 lg:px-8 overflow-hidden font-sans bg-[#F2F9FF]">
@@ -119,17 +128,17 @@ const Pricing = () => {
                 {/* Header */}
                 <div className="text-center mb-20">
                     <span className="inline-block px-[16px] py-[4px] rounded-[30px] bg-[#348DF01F] border border-[#348DF080] text-sm font-medium text-blue-500 mb-6 text-center">
-                        Pricing
+                        Services
                     </span>
                     <h2 className="max-w-5xl mx-auto mb-10 text-4xl font-bold leading-[1.2] md:text-5xl text-black">
-                        <span className="text-gray-600 font-semibold font-[Inter]">Simple,</span>{" "}
+                        <span className="text-gray-600 font-semibold font-[Inter]">Flexible</span>{" "}
                         <span className="inline-block relative pb-2 mr-2 md:mr-4 group">
-                            <span className="relative z-10 font-[Inter]">Transparent pricing</span>
+                            <span className="relative z-10 font-[Inter]">CIO Leadership for Healthcare Organizations</span>
                             <MarkerUnderline />
                         </span>
                     </h2>
                     <p className="font-tt-hoves font-medium text-[20px] leading-[100%] max-w-3xl mx-auto tracking-[0px] text-[#00000080]">
-                        Fixed-cost assessments and flexible leadership options designed to give CEOs clarity, stability, and long-term strategic direction.
+                        Wendigo provides flexible engagement options designed to give CEOs clarity, stability, and long-term strategic direction.
                     </p>
                 </div>
 
@@ -155,14 +164,7 @@ const Pricing = () => {
                             )}
 
                             <div className="mb-8">
-                                <div className="flex items-baseline gap-2 mb-2">
-                                    <span className="font-inter font-bold text-[28px] leading-none tracking-[-1px] align-middle">
-                                        {plan.price}
-                                    </span>
-                                    <span className={`font-ttHoves font-semibold text-[12px] leading-none tracking-[0px] align-middle ${plan.isPopular ? 'text-blue-100' : 'text-gray-500'}`}>
-                                        {plan.frequency}
-                                    </span>
-                                </div>
+                                
                                 <h3 className="font-inter font-bold text-[20px] leading-none tracking-[0px] align-middle mb-4">
                                     {plan.title}
                                 </h3>
@@ -177,24 +179,42 @@ const Pricing = () => {
                             </div>
 
                             <ul className="space-y-3 mb-10">
-                                {plan.features.map((feature, i) => (
-                                    <li key={i} className="flex items-start gap-3">
-                                        {plan.isPopular ? (
-                                            <CheckCircle2 className="w-5 h-5 text-blue-200 opacity-100 flex-shrink-0" />
-                                        ) : (
-                                            <div className="w-5 h-5 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0">
-                                                <CheckCircle2 className="w-5 h-5 text-blue-500" />
-                                            </div>
-                                        )}
-                                        <span className={`font-ttHoves font-medium text-[14px] leading-none tracking-[0px] align-middle ${plan.isPopular ? 'text-white' : 'text-gray-700'}`}>
-                                            {feature}
-                                        </span>
-                                    </li>
-                                ))}
-                            </ul>
+  {plan.features.map((feature, i) => {
+    const isSectionHeader =
+      feature === "Typical engagement" || feature === "Outcomes";
+
+    return (
+      <li key={i} className="flex items-start gap-3">
+        {!isSectionHeader && (
+          plan.isPopular ? (
+            <CheckCircle2 className="w-5 h-5 text-blue-200 flex-shrink-0" />
+          ) : (
+            <div className="w-5 h-5 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0">
+              <CheckCircle2 className="w-5 h-5 text-blue-500" />
+            </div>
+          )
+        )}
+
+        <span
+          className={`font-ttHoves text-[14px] ${
+            isSectionHeader
+  ? plan.isPopular
+      ? "font-bold text-white mt-2"
+      : "font-bold text-black mt-2"
+              : plan.isPopular
+              ? "text-white"
+              : "text-gray-700"
+          }`}
+        >
+          {feature}
+        </span>
+      </li>
+    );
+  })}
+</ul>
 
                             <div className="w-full flex justify-center">
-                                <a href="https://calendly.com/brian_damiani/working-session-30-min" target="_blank" rel="noopener noreferrer">
+                                <a href="https://t.ly/7Jjhw" target="_blank" rel="noopener noreferrer">
                                     <button className={`w-[260px] h-[42px] px-4 pr-3 pl-4 py-3 rounded-[30px] border border-solid font-ttHoves font-medium text-[14px] leading-none tracking-[0px] text-center align-middle flex items-center justify-center gap-[12px] opacity-100 transition-all duration-200 ${
                                         plan.isPopular
                                             ? 'bg-white text-black hover:bg-blue-50 shadow-lg'

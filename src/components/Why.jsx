@@ -54,37 +54,33 @@ const Why = () => {
                         <h1 className="max-w-5xl mb-10 text-4xl font-bold leading-[1.2] md:text-5xl text-black">
                             <span className="inline-block relative pb-2 mr-2 md:mr-4 group">
                                 <span className="text-gray-600 font-semibold font-[Inter]">The</span>{" "}
-                                <span className="relative z-10 font-[Inter]">Outcomes</span>
+                                <span className="relative z-10 font-[Inter]">Impact of</span>
                                 <MarkerUnderline />
                             </span>
 
                             <br className="hidden md:block" />
 
                             <span className="relative whitespace-nowrap inline-block mr-2 md:mr-4 ml-0 md:ml-2 group">
-                                <span className="relative z-10 font-[Inter]">CEOs</span>
+                                <span className="relative z-10 font-[Inter]">Strong</span>
                                 <MarkerUnderline />
                             </span>
 
-                            <span className="text-gray-400 font-semibold mx-2 font-[Inter]">care</span>
+                            <span className="text-gray-400 font-semibold mx-2 font-[Inter]">CIO</span>
 
                             <span className="relative whitespace-nowrap inline-block group">
-                                <span className="relative z-10 font-[Inter]">about.</span>
+                                <span className="relative z-10 font-[Inter]">Leadership</span>
                                 <MarkerUnderline />
                             </span>
                         </h1>
 
                         {/* Subtext */}
                         <p className="font-ttHoves font-normal text-[16px] sm:text-[18px] lg:text-[20px] leading-[140%] tracking-[0px] text-[#00000080] max-w-lg">
-                            When the stakes are high, leaders want someone
-                            <br className="hidden sm:block" />
-                            who can take control immediately and deliver
-                            <br className="hidden sm:block" />
-                            results that matter.
+                           Examples of outcomes delivered through CIO leadership roles and advisory engagements across healthcare organizations.
                         </p>
 
                         {/* CTA Button */}
                         <a
-                            href="https://calendly.com/brian_damiani/working-session-30-min"
+                            href="https://t.ly/7Jjhw"
                             target="_blank"
                             rel="noopener noreferrer">
                             <button className="mt-0 w-[157px] h-[50px] px-[38px] py-[10px] bg-[#348DF0] hover:bg-blue-600 text-white font-semibold rounded-[50px] shadow-[0_10px_25px_-5px_rgba(59,130,246,0.5)] transition-all duration-200 transform hover:-translate-y-1 active:scale-95">
@@ -105,35 +101,44 @@ const Why = () => {
                                 <StatsCard
                                     title="$20M+"
                                     subtitle="Recovered"
-                                    desc="Vendor payment identification, cost optimization and operational corrections."
+                                    desc="Vendor payment recovery and operational cost optimization across complex vendor ecosystems."
                                 />
                             </div>
 
                             {/* Card 2: Right Column Top (Shifted Up) */}
                             <div className="flex justify-center lg:justify-start lg:-translate-y-12">
                                 <StatsCard
-                                    title="55%"
-                                    subtitle="Auto Adjudication"
-                                    desc="Auto Adjudication improvement saving $1.25 million per year"
+                                    title="26% to over 75%"
+                                    subtitle="Auto Adjudication Rate"
+                                    desc="Claims automation improvement delivering millions in annual savings."
                                 />
                             </div>
 
                             {/* Card 3: Left Column Bottom */}
                             <div className="flex justify-center lg:justify-end">
                                 <StatsCard
-                                    title="0"
-                                    subtitle="Day-1 Issues"
-                                    desc="Operational stability delivered."
+                                    title="60 to 90+"
+                                    subtitle="Security Score"
+                                    desc="Enterprise security posture transformation across Microsoft cloud environments."
                                 />
                             </div>
 
                             {/* Card 4: Right Column Bottom (Shifted Up) */}
                             <div className="flex justify-center lg:justify-start lg:-translate-y-12">
                                 <StatsCard
-                                    title="60 → 90+"
-                                    subtitle="Security Score"
-                                    desc="Microsoft security posture transformation."
+                                    title="Zero"
+                                    subtitle="Day 1 Issues"
+                                    desc="No operational incidents during major IT leadership transition."
                                 />
+                            </div>
+
+                            <div className="flex justify-center lg:col-span-2">
+                                   <StatsCard
+                                        title="Enterprise IT Roadmap Established"
+                                        subtitle=""
+                                        desc="Multi-year technology strategy aligning platform modernization, vendor strategy, and organizational growth priorities."
+                                        compact
+                                    />
                             </div>
 
                         </div>
@@ -197,18 +202,36 @@ const Why = () => {
     );
 };
 
-const StatsCard = ({ title, subtitle, desc }) => (
+const StatsCard = ({ title, subtitle, desc , compact = false}) => (
     <div className="group relative p-8 w-[244px] h-[244px] rounded-[38px] bg-[#001325] before:content-[''] before:absolute before:inset-0 before:bg-[linear-gradient(180deg,#CAE5FE_0%,rgba(0,143,248,0.64)_100%)] before:rounded-[38px] before:z-0 shadow-[0_20px_40px_-10px_rgba(30,58,138,0.4)] text-white overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
         <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent pointer-events-none rounded-[38px]"></div>
-        <div className="relative z-10 flex flex-col h-full justify-between gap-6">
-            <div>
-                <h3 className="font-inter font-semibold text-[40px] leading-[1.2]">{title}</h3>
-                <p className="font-ttHoves text-[#FFFFFFBF] font-semibold text-[16px] leading-[100%]">{subtitle}</p>
-            </div>
-            <p className="font-ttHoves font-medium text-[16px] leading-[1.2] tracking-[1px] opacity-80 text-[#FFFFFF73]">
-                {desc}
-            </p>
-        </div>
+        <div className="relative z-10 flex flex-col h-full justify-between gap-4">
+
+  <div>
+    <h3
+      className={`font-inter font-semibold leading-[1.2] ${
+        compact ? "text-[24px]" : "text-[40px]"
+      }`}
+    >
+      {title}
+    </h3>
+
+    {subtitle && (
+      <p className="font-ttHoves text-[#FFFFFFBF] font-semibold text-[16px] leading-[100%]">
+        {subtitle}
+      </p>
+    )}
+  </div>
+
+  <p
+    className={`font-ttHoves font-medium leading-[1.25] tracking-[0.5px] opacity-80 text-[#FFFFFF73] ${
+      compact ? "text-[13px]" : "text-[16px]"
+    }`}
+  >
+    {desc}
+  </p>
+
+</div>
     </div>
 );
 

@@ -94,9 +94,9 @@ const Navbar = () => {
               {isMobileServicesOpen && (
                 <div className="flex flex-col items-end gap-4 mt-4 pr-2 border-r-2 border-blue-500/30 mr-1">
                   {/* <Link to="https://calendly.com/brian_damiani/working-session-30-min" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">Free Working Session</Link> */}
-                  <Link to="/pricing" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">Strategic CIO Advisor</Link>
-                  <Link to="/pricing" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">Fractional CIO Leadership</Link>
-                  <Link to="/pricing" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">Interim CIO Leadership</Link>
+                  <Link to="/services" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">Strategic CIO Advisor</Link>
+                  <Link to="/services" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">Fractional CIO Leadership</Link>
+                  <Link to="/services" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">Interim CIO Leadership</Link>
                 </div>
               )}
             </div>
@@ -135,9 +135,9 @@ function NavItemWithDropdown({ label }) {
       <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-56 bg-[#0F172A] border border-slate-700 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
         <div className="py-2 flex flex-col">
           
-          <Link to="/pricing" className="px-4 py-2 hover:bg-slate-800 text-sm"> Strategic CIO Advisor</Link>
-          <Link to="/pricing" className="px-4 py-2 hover:bg-slate-800 text-sm">Fractional CIO Leadership</Link>
-          <Link to="/pricing" className="px-4 py-2 hover:bg-slate-800 text-sm">Interim CIO Leadership</Link>
+          <Link to="/services" className="px-4 py-2 hover:bg-slate-800 text-sm"> Strategic CIO Advisor</Link>
+          <Link to="/services" className="px-4 py-2 hover:bg-slate-800 text-sm">Fractional CIO Leadership</Link>
+          <Link to="/services" className="px-4 py-2 hover:bg-slate-800 text-sm">Interim CIO Leadership</Link>
         </div>
       </div>
     </div>
