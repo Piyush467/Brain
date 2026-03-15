@@ -59,27 +59,26 @@ const Problems = () => {
   const problems = [
     {
       icon: <EyeOff className="w-8 h-8" />,
-      title: "Zero visibility",
+      title: "Unclear technology direction",
       description:
-        "You can't answer basic questions about IT security, compliance, or spending.",
+        "IT investments accumulate without a clear roadmap aligned to business priorities.",
     },
     {
       icon: <AlertCircle className="w-8 h-8" />,
-      title: "Cybersecurity risks",
-      description:
-        "You don't know where your vulnerabilities are before a breach happens.",
+      title: "Vendor-driven decisions",
+      description: "Vendor partners begin shaping strategy instead of supporting it.",
     },
     {
       icon: <TrendingDown className="w-8 h-8" />,
-      title: "Legacy systems",
+      title: "Leadership gaps in IT",
       description:
-        "Outdated technology is limiting growth and you don't know what to modernize first.",
+        "Without strong technology leadership, accountability across systems, vendors, and teams becomes fragmented.",
     },
     {
       icon: <Sparkles className="w-8 h-8" />,
-      title: "Emerging Technology",
+      title: "Growing operational risk",
       description:
-        "You don’t know how new technology capabilities are being or by who.? ",
+        "Security exposure, compliance issues, and technical debt increase when governance is weak.",
     },
   ];
 
@@ -93,24 +92,22 @@ const Problems = () => {
           </span>
 
           <h2 className="max-w-5xl mx-auto mb-10 text-4xl font-bold leading-[1.2] md:text-5xl text-black">
-            <span className="text-gray-600 font-semibold font-[Inter]">The</span>{" "}
+            <span className="text-gray-600 font-semibold font-[Inter]">Technology</span>{" "}
             <span className="inline-block relative pb-2 mr-2 md:mr-4 group">
-              <span className="relative z-10 font-[Inter]">real risk</span>
+              <span className="relative z-10 font-[Inter]">leadership gaps</span>
               <MarkerUnderline />
             </span>
-            <span className="text-gray-600 font-semibold font-[Inter]">is</span>{" "}
+            <span className="text-gray-600 font-semibold font-[Inter]">create</span>{" "}
             <span className="inline-block relative pb-2 group">
               <span className="relative z-10 font-[Inter]">
-                what you cannot see.
+                 invisible risk
               </span>
               <MarkerUnderline />
             </span>
           </h2>
 
           <p className="font-tt-hoves font-normal text-[20px] text-[#000000B2] text-center max-w-3xl mx-auto">
-            Most healthcare CEOs make major IT decisions with limited visibility.
-            Not because they want to, but because no one is giving them a clear
-            picture.
+            When healthcare organizations lack clear CIO leadership, technology decisions become reactive, vendors drive strategy, and risk quietly increases. Most CEOs don’t see the problem until projects stall, costs rise, or compliance issues emerge.
           </p>
         </div>
 
@@ -147,16 +144,15 @@ const Problems = () => {
         {/* CTA */}
         <div className="text-center mt-20">
           <p className="text-[20px] font-small text-[#000000CC] mb-6">
-            Clarity comes to those who act early — book your call before issues
-            escalate.
+           Experienced CIO leadership brings clarity and control.<br/> Schedule a conversation to discuss your organization’s technology leadership needs.
           </p>
           <a
-            href="https://calendly.com/brian_damiani/working-session-30-min"
+            href="https://t.ly/7Jjhw"
             target="_blank"
             rel="noopener noreferrer"
           >
             <button className="bg-[#348DF0] hover:bg-[#267ce0] text-white font-medium py-3.5 px-12 rounded-full shadow-[0_10px_30px_-10px_rgba(45,140,255,0.4)] transition-transform transform hover:-translate-y-0.5 active:translate-y-0 text-base">
-              Book a Call
+              Schedule a Conversation
             </button>
           </a>
         </div>

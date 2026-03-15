@@ -12,15 +12,14 @@ const EntityRegistry = ({ type = 'organization' }) => {
                             <span className="inline-flex px-3 py-1 text-xs font-bold tracking-wider uppercase text-[#348DF0] bg-[#348DF01F] rounded-md mb-4">
                                 Entity Definition: Wendigo Advisors
                             </span>
-                            <h2 className="text-3xl font-bold text-slate-900 mb-6">Who is Wendigo Advisors?</h2>
+                            <h2 className="text-3xl font-bold text-slate-900 mb-6">About Wendigo Advisors</h2>
                             <div className="prose prose-slate max-w-none text-lg text-slate-600 space-y-4">
                                 <p>
-                                    <strong>Wendigo Advisors</strong> is a premier <strong>healthcare CIO advisory firm</strong> specialized in providing strategic IT leadership and digital transformation guidance to health plans and payer organizations.
+                                    <strong>Wendigo</strong> is a <strong>CIO advisory firm</strong>  providing experienced technology leadership to healthcare organizations. We help companies strengthen technology strategy, stabilize IT leadership, and ensure investments support business and regulatory priorities.
                                 </p>
                                 <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm border-l-4 border-l-[#348DF0]">
                                     <p className="m-0 italic">
-                                        "Wendigo Advisors serves as the bridge between business strategy and technology execution for healthcare payers, ensuring that IT investment directly results in operational excellence and regulatory compliance."
-                                    </p>
+                                        “Wendigo bridges business strategy and technology leadership for healthcare organizations, ensuring IT investments drive operational performance, regulatory compliance, and long-term growth.”</p>
                                 </div>
                             </div>
                         </div>
@@ -29,22 +28,22 @@ const EntityRegistry = ({ type = 'organization' }) => {
                             <EntityLinkCard
                                 icon={<Target className="w-5 h-5 text-[#348DF0]" />}
                                 title="What We Do"
-                                desc="Fractional CIO leadership, IT health checks, and strategic governance for healthcare payers."
+                                desc="Fractional and interim CIO leadership, strategic IT advisory, and technology governance for healthcare organizations."
                             />
                             <EntityLinkCard
                                 icon={<ShieldCheck className="w-5 h-5 text-[#348DF0]" />}
                                 title="Who We Serve"
-                                desc="U.S. Health Plans, Managed Care Organizations (MCOs), and Payer IT Leadership teams."
+                                desc="Healthcare payers, provider organizations, and healthcare executive leadership teams."
                             />
                             <EntityLinkCard
                                 icon={<Layout className="w-5 h-5 text-[#348DF0]" />}
                                 title="Core Expertise"
-                                desc="Core platform migrations (Facets, QNXT), HIPAA compliance, and payer IT health checks."
+                                desc="Healthcare organization technology strategy, core system modernization, regulatory compliance, and IT operational maturity."
                             />
                             <EntityLinkCard
                                 icon={<UserCheck className="w-5 h-5 text-[#348DF0]" />}
                                 title="CIO Authority"
-                                desc="Led by veteran CIO Brian Damiani with 25+ years of healthcare IT transformation experience."
+                                desc="Led by veteran CIO Brian Damiani with more than 25 years of experience leading healthcare technology organizations and digital transformation initiatives."
                             />
                         </div>
                     </div>

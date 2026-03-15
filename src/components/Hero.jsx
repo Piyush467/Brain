@@ -177,12 +177,12 @@ function HeroContent() {
         >
           {/* Main Keyword Block */}
           <span className="relative whitespace-nowrap inline-block mr-2 md:mr-4 group">
-            <span className="relative z-10 font-[Inter]">Healthcare CIO</span>
+            <span className="relative z-10 font-[Inter]">Flexible CIO</span>
             <MarkerUnderline />
           </span>
 
           <span className="relative whitespace-nowrap inline-block mr-2 md:mr-4 group">
-            <span className="relative z-10 font-[Inter]">Advisory</span>
+            <span className="relative z-10 font-[Inter]">Leadership</span>
             <MarkerUnderline />
           </span>
 
@@ -192,23 +192,23 @@ function HeroContent() {
 
           {/* Target Audience Block */}
           <span className="relative whitespace-nowrap inline-block mr-2 md:mr-4 group">
-            <span className="relative z-10 font-[Inter]">Health Plans</span>
+            <span className="relative z-10 font-[Inter]">Healthcare Organizations</span>
             <MarkerUnderline />
           </span>
         </h1>
 
         {/* Subtext */}
         <p className="font-tt-hoves font-medium text-[16px] leading-[160%] tracking-[0px] text-[#FFFFFF80] text-center max-w-4xl mx-auto mb-6">
-          Wendigo Advisors is a specialized <strong className="text-white">healthcare CIO advisory firm</strong> providing <strong className="text-white">CIO as a service for health plans</strong>, <strong className="text-white">IT health checks</strong>, and strategic CIO operating model implementation for payer organizations across the United States.
+          Independent CIO leadership to assist <strong className="text-white">healthcare organizations</strong> in navigating<strong className="text-white"> critical technology </strong>, <strong className="text-white"></strong>and decisions and ensure strong business–IT alignment.
         </p>
         <p className="font-tt-hoves font-medium text-[14px] leading-[160%] tracking-[0px] text-[#FFFFFF60] text-center max-w-3xl mx-auto mb-10">
-          Led by <strong className="text-[#FFFFFFAA]">Brian Damiani</strong> — 25+ years of healthcare IT leadership experience helping health plans navigate digital transformation, stabilize IT operations, and align technology with business strategy.
+           With 25 years of healthcare expertise, Wendigo provides strategic CIO leadership that reduces risk, stabilizing operations, and aligning technology with business priorities.
         </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col items-center gap-5">
           <a
-            href="https://calendly.com/brian_damiani/working-session-30-min"
+            href="https://t.ly/7Jjhw"
             target="_blank"
             rel="noopener noreferrer"
           >

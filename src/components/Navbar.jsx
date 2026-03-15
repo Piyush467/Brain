@@ -38,21 +38,21 @@ const Navbar = () => {
         {/* DESKTOP LINKS */}
         <div className="hidden lg:flex items-center gap-8 text-[#FFFFFF6B] text-sm font-medium">
           <NavItemWithDropdown label="Services" />
-          <Link to="/pricing" className="hover:text-white transition-colors">Pricing</Link>
+          
           <Link to="/about" className="hover:text-white transition-colors">About Us</Link>
           <button onClick={handleTestimonialsClick} className="hover:text-white transition-colors">
             Testimonials
           </button>
-          <Link to="/resources" className="hover:text-white transition-colors">Resources</Link>
+         
           <Link to="/insights" className="hover:text-white transition-colors">Insights</Link>
           <a href="https://yourhealthcarecio.com/blog" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Blogs</a>
         </div>
 
         {/* CTA + MOBILE HAMBURGER */}
         <div className="flex items-center gap-4">
-          <a href="https://calendly.com/brian_damiani/working-session-30-min" target="_blank" rel="noreferrer">
+          <a href="https://t.ly/7Jjhw" target="_blank" rel="noreferrer">
             <button className="hidden sm:block bg-[#338CF0] text-white font-semibold py-3 px-8 rounded-full text-sm">
-              Contact Us for Free
+              Schedule a Conversation
             </button>
           </a>
 
@@ -93,18 +93,18 @@ const Navbar = () => {
 
               {isMobileServicesOpen && (
                 <div className="flex flex-col items-end gap-4 mt-4 pr-2 border-r-2 border-blue-500/30 mr-1">
-                  <Link to="https://calendly.com/brian_damiani/working-session-30-min" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">Free Working Session</Link>
-                  <Link to="/ITservices" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">IT Health Check Service</Link>
-                  <Link to="/cio-operating" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">CIO Operating System</Link>
-                  <Link to="/healthcare" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">CIO as a Service</Link>
+                  {/* <Link to="https://calendly.com/brian_damiani/working-session-30-min" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">Free Working Session</Link> */}
+                  <Link to="/pricing" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">Strategic CIO Advisor</Link>
+                  <Link to="/pricing" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">Fractional CIO Leadership</Link>
+                  <Link to="/pricing" onClick={closeMobileMenu} className="text-2xl text-gray-400 hover:text-white">Interim CIO Leadership</Link>
                 </div>
               )}
             </div>
 
             <Link to="/about" onClick={closeMobileMenu} className="text-4xl font-medium hover:text-blue-400">About Us</Link>
             <button onClick={handleTestimonialsClick} className="text-4xl font-medium hover:text-blue-400 text-right">Testimonials</button>
-            <Link to="/pricing" onClick={closeMobileMenu} className="text-4xl font-medium hover:text-blue-400">Pricing</Link>
-            <Link to="/resources" onClick={closeMobileMenu} className="text-4xl font-medium hover:text-blue-400">Resources</Link>
+            
+           
             <Link to="/insights" onClick={closeMobileMenu} className="text-4xl font-medium hover:text-blue-400">Insights</Link>
             <a href="https://yourhealthcarecio.com/blog" onClick={closeMobileMenu} target="_blank" rel="noopener noreferrer" className="text-4xl font-medium hover:text-blue-400">Blogs</a>
           </div>
@@ -134,10 +134,10 @@ function NavItemWithDropdown({ label }) {
       <ChevronDown size={14} className="group-hover:rotate-180 transition-transform duration-200" />
       <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-56 bg-[#0F172A] border border-slate-700 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
         <div className="py-2 flex flex-col">
-          <Link to="https://calendly.com/brian_damiani/working-session-30-min" target="_blank" rel="noopener noreferrer" className="px-4 py-2 hover:bg-slate-800 text-sm">Free Working Session (New)</Link>
-          <Link to="/ITservices" className="px-4 py-2 hover:bg-slate-800 text-sm">IT Health Check Services</Link>
-          <Link to="/cio-operating" className="px-4 py-2 hover:bg-slate-800 text-sm">CIO Operating System</Link>
-          <Link to="/healthcare" className="px-4 py-2 hover:bg-slate-800 text-sm">CIO as a Service</Link>
+          
+          <Link to="/pricing" className="px-4 py-2 hover:bg-slate-800 text-sm"> Strategic CIO Advisor</Link>
+          <Link to="/pricing" className="px-4 py-2 hover:bg-slate-800 text-sm">Fractional CIO Leadership</Link>
+          <Link to="/pricing" className="px-4 py-2 hover:bg-slate-800 text-sm">Interim CIO Leadership</Link>
         </div>
       </div>
     </div>
