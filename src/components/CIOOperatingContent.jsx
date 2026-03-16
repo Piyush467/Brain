@@ -123,38 +123,101 @@ const CIOOperatingContent = () => {
                 {/* Outcomes */}
                 <div className="text-center mb-12">
                     <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
-                        Outcomes for Healthcare Payer Organizations
+                        Stronger Technology Leadership means Lower Operational Risk.
                     </h3>
+                    <p className="text-slate-600 text-lg max-w-2xl mx-auto">
+            Our healthcare CIO advisory services deliver measurable results for health plans and payer systems.
+          </p>
                 </div>
 
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-                    {[
-                        "CEO and board visibility into IT performance and risk",
-                        "Formalized IT governance that survives leadership transitions",
-                        "Reduced operational surprises and firefighting cycles",
-                        "Measurable IT KPIs aligned to business objectives",
-                        "Strengthened compliance posture and audit readiness",
-                        "Foundation for sustainable digital transformation"
-                    ].map((outcome, i) => (
-                        <div key={i} className="flex items-start gap-3 p-5 bg-white rounded-xl border border-slate-100 shadow-sm">
-                            <CheckCircle className="w-5 h-5 text-[#348DF0] mt-0.5 flex-shrink-0" />
-                            <p className="text-slate-700 font-medium">{outcome}</p>
-                        </div>
-                    ))}
+                <div className="grid md:grid-cols-3 gap-8 mb-16">
+                
+                  {/* Leadership & Strategy */}
+                  <div className="bg-[#F8FAFC] rounded-2xl border border-slate-100 p-7">
+                    <h4 className="text-xl font-bold text-slate-900 mb-4">
+                      Leadership & Strategy
+                    </h4>
+                
+                    <ul className="space-y-4">
+                      <li className="flex items-start gap-3 text-slate-700">
+                        <CheckCircle className="w-5 h-5 text-[#348DF0] mt-1 flex-shrink-0" />
+                        Technology roadmaps aligned with organizational strategy and objective
+                      </li>
+                
+                      <li className="flex items-start gap-3 text-slate-700">
+                        <CheckCircle className="w-5 h-5 text-[#348DF0] mt-1 flex-shrink-0" />
+                        Leadership for digital transformation and modernization initiatives
+                      </li>
+                
+                      <li className="flex items-start gap-3 text-slate-700">
+                        <CheckCircle className="w-5 h-5 text-[#348DF0] mt-1 flex-shrink-0" />
+                        A culture of accountability and ownership across the IT organization
+                      </li>
+                    </ul>
+                  </div>
+                
+                  {/* Risk & Governance */}
+                  <div className="bg-[#F8FAFC] rounded-2xl border border-slate-100 p-7">
+                    <h4 className="text-xl font-bold text-slate-900 mb-4">
+                      Risk & Governance
+                    </h4>
+                
+                    <ul className="space-y-4">
+                      <li className="flex items-start gap-3 text-slate-700">
+                        <CheckCircle className="w-5 h-5 text-[#348DF0] mt-1 flex-shrink-0" />
+                        Stronger cybersecurity and regulatory compliance posture
+                      </li>
+                
+                      <li className="flex items-start gap-3 text-slate-700">
+                        <CheckCircle className="w-5 h-5 text-[#348DF0] mt-1 flex-shrink-0" />
+                        Improved vendor accountability and contract optimization
+                      </li>
+                
+                      <li className="flex items-start gap-3 text-slate-700">
+                        <CheckCircle className="w-5 h-5 text-[#348DF0] mt-1 flex-shrink-0" />
+                        Stronger IT governance and executive decision frameworks
+                      </li>
+                    </ul>
+                  </div>
+                
+                  {/* Operational Strength */}
+                  <div className="bg-[#F8FAFC] rounded-2xl border border-slate-100 p-7">
+                    <h4 className="text-xl font-bold text-slate-900 mb-4">
+                      Operational Strength
+                    </h4>
+                
+                    <ul className="space-y-4">
+                      <li className="flex items-start gap-3 text-slate-700">
+                        <CheckCircle className="w-5 h-5 text-[#348DF0] mt-1 flex-shrink-0" />
+                        Stabilized IT operations and reduced technical debt
+                      </li>
+                
+                      <li className="flex items-start gap-3 text-slate-700">
+                        <CheckCircle className="w-5 h-5 text-[#348DF0] mt-1 flex-shrink-0" />
+                        Clear executive visibility into IT risks, costs, and capability gaps
+                      </li>
+                
+                      <li className="flex items-start gap-3 text-slate-700">
+                        <CheckCircle className="w-5 h-5 text-[#348DF0] mt-1 flex-shrink-0" />
+                        Improved collaboration between business and IT leadership
+                      </li>
+                    </ul>
+                  </div>
+                
                 </div>
 
                 {/* Bottom CTA */}
                 <div className="text-center">
                     <p className="text-slate-600 text-lg mb-6">
-                        Ready to transform your health plan's IT into a governed, strategic asset?
+                       Ready to bring clarity and accountability to your technology environment?
                     </p>
                     <a
-                        href="https://calendly.com/brian_damiani/working-session-30-min"
+                        href="https://t.ly/7Jjhw"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 bg-[#348DF0] hover:bg-[#267ce0] text-white font-medium py-3.5 px-10 rounded-full shadow-lg transition-all transform hover:-translate-y-0.5"
                     >
-                        Schedule a Free Working Session
+                        Get Strategic Insight
                     </a>
                 </div>
             </div>
