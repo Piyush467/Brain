@@ -127,8 +127,8 @@ const Home = () => {
       <EntityRegistry type="organization" />
       <Problems />
       <Services />
-      {/* <Pricing /> */}
-      <AdvisoryPackages/>
+      <Pricing />
+      {/* <AdvisoryPackages/> */}
       <Why />
       <AboutWendigo />
 
